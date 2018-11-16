@@ -1,0 +1,251 @@
+/* CSS Dasar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    width: auto;
+    padding: 5px 30px;
+    background-color: #4a86e8;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-outlined {
+    width: auto;
+    padding: 5px 30px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.orange-text {
+    color: orange;
+}
+
+.blue-text {
+    color: #4a86e8;
+}
+
+/* End CSS Dasar */
+
+/* Navbar */
+
+nav {
+    height: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: absolute;
+    width: 100%;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+nav div {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    white-space: normal;
+}
+
+nav .kiri h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav .kanan ul {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+nav .kanan ul li {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+nav .kanan ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* End Navbar */
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    background-image: url(../img/bg1.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+header div {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    white-space: normal;
+}
+
+header .kiri {
+    text-align: left;
+}
+
+header .kanan {
+    text-align: center;
+}
+
+/* End Header */
+
+/* Resep */
+
+#resep {
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-image: url(../img/bg2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+#resep h1 {
+    text-align: center;
+}
+
+#resep .card-wrapper {
+    text-align: center;
+}
+
+#resep .card-wrapper .card {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 10px 30px 0 rgba(178, 187, 190, 0.26);
+}
+
+#resep .card-wrapper .card .card-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#resep .card-wrapper .card .card-content {
+    height: 100px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* End Resep */
+
+/* Newsletter */
+
+#newsletter {
+    height: 400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-image: url(../img/bg3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#newsletter form {
+    padding: 4px 3px 3px 3px;
+    height: 40px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+}
+
+#newsletter form input {
+    height: 33px;
+    width: 330px;
+    border: 1px solid white;
+}
+
+#newsletter form a.btn {
+    margin-right: -26px;
+}
+
+/* End Newsletter */
+
+/* Footer */
+
+footer {
+    height: 70px;
+    background-color: white;
+    white-space: nowrap;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+footer div {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    white-space: normal;
+}
+
+footer .kiri {
+    text-align: left;
+}
+
+footer .kanan {
+    text-align: right;
+}
+
+footer .kanan .sosmed {
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .kanan .sosmed a {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 100%;
+    text-decoration: none;
+    background-color: #4a86e8;
+    margin: 5px 2px;
+    color: white;
+}
+
+footer .kanan .sosmed a:hover {
+    opacity: 0.8;
+}
+
+/* End Footer */

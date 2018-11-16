@@ -1,0 +1,54 @@
+.user_settings_bit {
+	margin-bottom: 8px;
+}
+
+.user_settings_bit input {
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.user_settings_bit select {
+	margin-top: 8px;
+}
+
+.user_settings_bit label {
+	font-weight: normal;
+	width: auto;
+	float: none;
+	margin-right: 0;
+	display: inline;
+}
+
+.group_settings_bit {
+	margin-bottom: 8px;
+	font-weight: 400;
+}
+
+.group_settings_bit input {
+	margin: 0 5px 0 0;
+}
+
+.group_settings_bit select,
+.group_settings_bit input.text_input,
+.group_settings_bit textarea {
+	margin-top: 8px;
+}
+
+.group_settings_bit label {
+	font-weight: normal;
+	width: auto;
+	margin: 0;
+	display: inline;
+	float: none;
+}
+
+.group_settings_bit small {
+}
+
+.group_settings_bit small.input {
+	padding-left: 0;
+}
+#tab_general td td {
+	border: 0;
+	padding: 0 4px;
+}

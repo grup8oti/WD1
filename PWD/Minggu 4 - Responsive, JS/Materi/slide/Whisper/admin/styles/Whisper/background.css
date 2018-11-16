@@ -1,0 +1,11 @@
+body {
+    background: url(images/wallpaper.jpg) no-repeat center center;
+    background-attachment: fixed!important;
+    background-size: cover!important;
+    color: #fff;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 30px 50px;
+    line-height: 1.4;
+}

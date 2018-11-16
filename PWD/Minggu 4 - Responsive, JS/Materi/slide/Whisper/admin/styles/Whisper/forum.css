@@ -1,0 +1,93 @@
+/* Moderation Queue */
+.modqueue_message {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.modqueue_controls {
+	width: auto;
+	float: right;
+	text-align: center;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.modqueue_controls label {
+	margin-right: 8px;
+}
+
+.label_radio_ignore, .label_radio_delete, .label_radio_approve {
+	font-weight: bold;
+}
+
+.modqueue_meta {
+	font-size: 17px;
+	margin-bottom: 8px;
+}
+
+.modqueue_meta strong {
+	font-weight: 500
+}
+
+.modqueue_mass {
+	list-style: none;
+	margin: 0 20px;
+	width: auto;
+	padding: 0;
+	text-align: center;
+}
+
+.modqueue_mass li {
+	margin-bottom: 15px;
+	padding: 0;
+	display: inline-block;
+}
+
+.modqueue_mass li a {
+	display: inline-block;
+	padding: 4px 6px;
+	margin: 0;
+	vertical-align: top;
+	outline: none;
+	font-size: 9px;
+	padding: 7px 10px;
+	background: rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	display: inline-block!important;
+	text-transform: uppercase;
+	font-weight: 500;
+	border: none;
+	color: #fff;
+	font-family: inherit;
+	border-radius: 3px;
+	line-height: 1;
+	transition: all .2s ease;
+	position: relative;
+	top: 0;
+}
+
+.forum_settings_bit {
+	margin-bottom: 8px;
+}
+
+.forum_settings_bit input {
+	margin-right: 5px;
+}
+
+.forum_settings_bit select,
+.forum_settings_bit input.text_input,
+.forum_settings_bit textarea {
+	margin-top: 8px;
+}
+
+.forum_settings_bit label {
+	font-weight: normal;
+	width: auto;
+	display: inline;
+	margin: 0;
+	float: none;
+}
+
+.forum_settings_bit small {
+	padding-left: 25px;
+}

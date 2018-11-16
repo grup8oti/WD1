@@ -1,0 +1,374 @@
+* {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1)
+}
+
+@font-face {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/icons.eot?#iefix) format(embedded-opentype),url(fonts/icons.woff) format(woff),url(fonts/icons.ttf) format(truetype),url(fonts/icons.svg) format(svg);
+}
+
+*:before {
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
+a:link,
+a:visited {
+    color: #88FFB3;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hidden {
+	display: none;
+}
+
+#wrapper {
+    margin: 150px auto;
+    width: 450px;
+}
+
+.header h1 a {
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 24px 0 0;
+}
+
+#content {
+    background: rgba(255,255,255,0.2);
+    border-radius: 12px;
+    box-shadow: inset 0 0 1px rgba(255,255,255,0.3);
+    margin: 0;
+    padding: 20px 25px;
+}
+
+#sidebar {
+	display: none;
+}
+
+form {
+    padding-bottom: 0
+}
+
+    form p {
+        padding: 0 0 10px
+    }
+
+h2 {
+    display: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255,255,255,.5);
+}
+
+input.text_input {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px rgba(255,255,255,0.15),inset 0 2px 1px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 10px 0;
+    padding: 8px 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+input.text_input:focus {
+    background: rgba(0,0,0,0.2);
+    outline: none;
+}
+
+#logo h1 {
+    font-weight: 200;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#message {
+    background: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),inset 0 -1px 1px rgba(0,0,0,0.05);
+    font-size: 15px;
+    margin: 0 -25px;
+}
+
+    #message div {
+        padding: 12px 15px
+    }
+
+#message.error div {
+    border-left: 4px solid #FF4747
+}
+
+#message.success div {
+    border-left: 4px solid #D0FF57
+}
+
+form label {
+    display: none;
+    font-weight: 700;
+}
+
+.input_wrapper {
+	display: inline-block;
+	position: relative;
+}
+
+.submit {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+    .submit input {
+        background: rgba(0,0,0,0.15);
+        border: none;
+        border-radius: 3px;
+        box-shadow: inset 0 1px rgba(255,255,255,0.2),0 1px rgba(0,0,0,0.3);
+        color: #FFF;
+        display: inline-block;
+        font-family: inherit;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1;
+        margin: 0;
+        outline: none;
+        padding: 12px 20px;
+        position: relative;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+        top: 0;
+        transition: all .2s ease;
+        vertical-align: top;
+    }
+
+    .submit input:hover {
+        background: rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+
+    .submit input:active {
+        top: 2px
+    }
+
+.forgot_password {
+    display: none;
+    padding-left: 8px;
+}
+
+.footer {
+    font-weight: 200;
+    padding: 10px 0;
+}
+
+    .footer p:first-child {
+        display: inline-block;
+    }
+
+    .footer p:last-child {
+        display: inline-block;
+        float: right;
+    }
+
+p,
+.form_container .field {
+    margin: 0
+}
+
+#content>p:not(#message),
+#content h2 {
+    display: none
+}
+
+/** jGrowl Start **/
+
+/** Special IE6 Style Positioning **/
+.ie6 {
+	position: 			absolute;
+}
+
+.ie6.top-right {
+	right: 				auto;
+	bottom: 			auto;
+	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.top-left {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-right {
+	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-left {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.center {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	width: 				100%;
+}
+
+
+/** jGrowl Styling **/
+.jGrowl {
+	z-index: 			9999;
+	color: 				#fff;
+	position:			fixed;  
+	margin-bottom: 20px;
+}
+
+.jGrowl.top-left {
+	left: 				0px;
+	top: 				0px;
+}
+
+.jGrowl.top-right {
+	right: 				0px;
+	top: 				0px;
+}
+
+.jGrowl.bottom-left {
+	left: 				0px;
+	bottom:				0px;
+}
+
+.jGrowl.bottom-right {
+	right: 				0px;
+	bottom: 			0px;
+}
+
+.jGrowl.center {
+	top: 				0px;
+	width: 				50%;
+	left: 				25%;
+}
+
+/** Cross Browser Styling **/
+.center .jGrowl-notification, .center .jGrowl-closer {
+	margin-left: 		auto;
+	margin-right: 		auto;
+}
+
+.jGrowl .jGrowl-notification, .jGrowl .jGrowl-closer {
+	width: 261px;
+	margin: 10px 10px 10px 50px!important;
+	font-size: 13px;
+	text-align: 			left;
+	line-height: 1.4;
+	display: 				none;
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 300;
+	box-shadow: 0 1px 90px rgba(0, 0, 0, 0.45);
+    border-radius: 4px; 
+    background: url(images/wallpaper.jpg) no-repeat center center;
+    background-attachment: fixed!important;
+    background-size: cover!important;
+}
+
+.jGrowl .jGrowl-notification .jGrowl-message {
+	display: block;
+    background: url(images/wallpaper.jpg) no-repeat center center;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.35);
+	height: 100%;
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 11px;
+}
+
+.jGrowl .jGrowl-notification._success .jGrowl-message:before {
+    content: "\f058";
+    display: inline-block;
+    float: left;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 10px;
+    color: rgb(191, 247, 130);
+}
+
+.jGrowl .jGrowl-notification._error .jGrowl-message:before {
+    content: "\f057";
+    display: inline-block;
+    float: left;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 10px;
+    color: rgb(255, 182, 155);
+}
+
+.jGrowl .jGrowl-notification,
+.jGrowl .jGrowl-closer {
+	margin: 12px;
+}
+
+.jGrowl .jGrowl-notification .jGrowl-header {
+	font-weight: 			bold;
+	font-size:				.85em;
+}
+
+.jGrowl .jGrowl-notification .jGrowl-close {
+	z-index:				99;
+	float: 					right;
+	font-weight: 			bold;
+	font-size: 				1em;
+	cursor:					pointer;
+	position: absolute;
+	right: 6px;
+}
+
+.jGrowl .jGrowl-closer {
+	padding-top: 			4px;
+	padding-bottom: 		4px;
+	cursor: 				pointer;
+	font-size:				.9em;
+	font-weight: 			bold;
+	text-align: 			center;
+}
+
+/** Hide jGrowl when printing **/
+@media print {
+	.jGrowl {
+		display: 			none;
+	}
+}
+
+/** jGrowl End **/
+
+.admin_quick_access {
+	text-align: center;
+	margin: 10px 0 0
+}
+
+	.admin_quick_access .avatar {
+		border-radius: 500px;
+		margin: 0 5px;
+		width: 50px;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.3)
+	}

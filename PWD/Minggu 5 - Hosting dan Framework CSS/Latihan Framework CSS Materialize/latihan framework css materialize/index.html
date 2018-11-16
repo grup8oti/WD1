@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Component Navbar Materialize -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="sass.html">Sass</a>
+                </li>
+                <li>
+                    <a href="badges.html">Components</a>
+                </li>
+                <li>
+                    <a href="collapsible.html">JavaScript</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Component Navbar Materialize -->
+
+    <!-- Learn Grid Materialize -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col m6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti modi, adipisci delectus eum sint velit. Adipisci
+                    ab consequatur aut qui optio. Perspiciatis, ea aliquam! Ullam culpa autem iusto sunt!
+                </div>
+                <div class="col m6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio molestias, porro fuga laudantium facilis laborum? Asperiores
+                    consectetur omnis voluptates neque dicta recusandae hic, tempore beatae ea reprehenderit iste soluta
+                    maiores.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m4 s4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias laborum sunt. Quisquam sapiente recusandae eveniet
+                    vero aut accusamus quam, laborum, officiis iusto odio quasi exercitationem nostrum nisi quidem iste?
+                </div>
+                <div class="col m4 s4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident quod nam. Eveniet harum necessitatibus consequatur
+                    a, illum, nesciunt eaque iure nulla voluptatem laudantium laborum totam beatae aperiam iusto culpa?
+                </div>
+                <div class="col m4 s4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, esse commodi neque facere accusantium, officiis, voluptate
+                    quibusdam accusamus ex fugit quaerat exercitationem. Esse modi vitae error provident vero, voluptatem
+                    nulla.
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Learn Grid Materialize -->
+
+    <br>
+    <br>
+
+    <!-- Button Component Materialize -->
+    <a class="waves-effect waves-light btn">button</a>
+    <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+    <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+    <!-- End Button Component Materialize -->
+
+    <br>
+    <br>
+
+    <!-- Component Dropdown Materialize -->
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+        <li>
+            <a href="#!">one</a>
+        </li>
+        <li>
+            <a href="#!">two</a>
+        </li>
+        <li class="divider" tabindex="-1"></li>
+        <li>
+            <a href="#!">three</a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="material-icons">view_module</i>four</a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="material-icons">cloud</i>five</a>
+        </li>
+    </ul>
+    <!-- End Component Dropdown Materialize -->
+
+    <br>
+    <br>
+
+    <!-- Modals Component Materialize -->
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+    <!-- End Modals Component Materialize -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Javascript Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Init Javascript Component Materialize -->
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-trigger').dropdown();
+            $('.modal').modal();
+        });
+    </script>
+</body>
+
+</html>

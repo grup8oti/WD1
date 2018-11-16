@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+   
+}
+
+nav {
+    height: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: absolute;
+    width: 100%;
+    white-space: nowrap;
+    z-index: 1; /*kayak tiga dimensi */
+}
+
+nav div {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+}
+/* Navbar Mobile */
+nav .kanan .fa.fa-bars {
+    display: none;
+}
+
+nav#navbar-mobile {
+    width: 100%;
+    height: 50vh;
+    background-color: dodgerblue;
+    position: fixed; /*biar kalo di scrol posisinyo dk berubah*/
+    
+    z-index: 100;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    
+}
+
+nav#navbar-mobile .fa.fa-times {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+nav#navbar-mobile ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav#navbar-mobile ul li {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav#navbar-mobile ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+
+nav .kanan ul {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+nav .kiri h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: skyblue;
+}
+
+nav .kanan ul li {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+nav .kanan ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    background-image: url(../img/bg1.png);
+    background-position: top right;
+    background-size: contain;
+    z-index: 0;
+    white-space: nowrap; 
+    background-repeat: no-repeat;
+    font-family: 'Inconsolata', monospace;
+}
+.register{
+    width: auto;
+    padding: 5px 30px;
+    background-color: transparent;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.register:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+header div{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    white-space: normal;
+}
+
+header .kiri{
+    text-align: center;
+    
+    
+}
+
+header .kanan{
+    text-align: right;
+}
+
+header .kiri .button{
+    width: auto;
+    padding: 5px 30px;
+    background-color: dodgerblue;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+header .kiri .button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.orange-text{
+    color: orange;
+}
+
+#resep{
+    height: auto;
+    padding: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    background-image: url(../img/bg2.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat; /* biar background dk ngulang*/
+}
+
+#resep h1{
+    text-align: center;
+}
+
+#resep .card-wrapper{
+    text-align: center;
+}
+
+#resep .card-wrapper .card{
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 10px 30px 0 rgba(178,187,190,0.26);
+}
+
+#resep .card-wrapper .card .card-image{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#resep .card-wrapper .card .card-content{
+    height: 100px;
+    padding: 10px;
+    text-align: left;
+}
+
+#newsletter{
+    height: 400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-image: url(../img/bg3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+#newsletter form{
+    padding: 4px 3px 3px 3px;
+    height: 40px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+#newsletter form input{
+    height: 33px;
+    width: 330px;
+    border: 1px solid white;
+    
+}
+
+#newsletter form a.btn{
+    margin-right: -35px;
+    
+}
+
+footer{
+    height: 70px;
+    background-color: white;
+    white-space: nowrap;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+footer div {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    white-space: normal;
+}
+
+footer .kiri {
+    text-align: left;
+}
+footer .kanan{
+    text-align: right;
+}
+
+footer .kanan .sosmed{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+}
+
+footer .kanan .sosmed a{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 100%;
+    text-decoration: none;
+    background-color: #4a86e9;
+    margin: 5px 2px;
+    color: white;
+}
+
+.btn{
+    width: auto;
+    padding: 5px 30px;
+    background-color: dodgerblue;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+@media screen and (max-width:480px){
+    nav {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+    nav .kiri h1 {
+        color: white;
+    }
+    nav .kanan ul {
+        display: none;
+    }
+    
+    nav .kanan .fa.fa-bars {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-size: cover;
+    }
+    
+    header div{
+        display: block;
+        width: 100%;
+    }
+    
+    header .kiri{
+        text-align:center;
+        color: white;
+    }
+    
+    header .kanan{
+        padding-top: 55px;
+        margin-left: -60px;
+    }
+    
+    header .kiri .button{
+        background-color: white;
+        color: #4a86e8;
+    }
+    
+    #resep {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #newsletter{
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+    
+    #newsletter form{
+        width: 300px;
+    }
+    
+    #newsletter form input{
+        width: 130px;
+    }
+    
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    footer div{
+       display: block;
+        width: 100%;
+    }
+    
+    footer .kiri{
+        text-align: center;
+    }
+    
+    footer .kanan{
+        text-align: center;
+    }
+      
+}
+
