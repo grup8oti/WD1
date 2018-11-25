@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+header{
+    background-image: url(img/Pure.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:2000px;;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: -300px;
+    
+    
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    color: white;
+    margin-top: 50px;
+    font-size: 80px;
+}
+
+
+
+header p{
+    margin-top: 20px;
+    text-align:center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 19px;
+   
+        
+}
+
+.kanan{
+    text-align: center;
+    margin-top: 240px; 
+   
+}
+
+nav ul{
+    text-align: center;   
+}
+
+nav ul li{ 
+    
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 80px;
+    margin-top: 20px;
+}
+
+nav ul li a{  
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Maven", sans-serif;
+}
+
+#fitur{
+    text-align: center;
+    
+   
+}
+
+#fitur div{
+    display: inline-block;
+    padding: 20px;
+    font-family: "Maven", sans-serif;
+}
+
+
+#fitur i {
+    
+    border-style: solid;
+    border-radius: 40px;
+    padding: 18px;
+    content: "\f508";
+    font-size: 55px;
+    color: #1f115cf0;
+}
+
+#tema{
+    text-align: center;
+    background-color: #1f115cf0;
+    background-repeat: no-repeat;
+    background-size: 2000px;
+   
+}
+
+#tema .card-wrapper{
+    display: inline-block;
+    padding: 40px;
+    padding-top: 15px;
+    font-family: "Maven", sans-serif;
+}
+
+#tema .card{
+    display: inline-block;
+    color: white;
+    
+}
+
+
+h3{
+    text-align: center;
+    font-style: italic;
+    color: white;
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Maven", sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
